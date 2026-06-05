@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Adalat Consulting</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8fafc;
+font-family:Arial,sans-serif;
+}
+
+.hero-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
+z-index:-1;
+}
+
+.glass{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.15);
+}
+
+.service-card{
+transition:.4s;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+.youtube-frame{
+width:100%;
+height:350px;
+border:none;
+border-radius:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="fixed top-0 left-0 w-full z-50 glass">
+
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<h1 class="text-white text-3xl font-bold">
+ADALAT CONSULTING
+</h1>
+
+<div class="hidden md:flex gap-8 text-white">
+
+<a href="#home">Ana Sayfa</a>
+<a href="#services">Hizmetler</a>
+<a href="#videos">Videolar</a>
+<a href="#contact">İletişim</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="home"
+class="relative h-screen flex items-center justify-center text-center">
+
+<video
+autoplay
+muted
+loop
+playsinline
+class="hero-video">
+
+<source
+src="https://cdn.coverr.co/videos/coverr-business-meeting-1567844819065?download=1080p"
+type="video/mp4">
+
+</video>
+
+<div class="overlay"></div>
+
+<div class="max-w-4xl px-6">
+
+<h1 class="text-6xl md:text-8xl font-bold text-white">
+
+ADALAT
+<span class="text-yellow-400">
+CONSULTING
+</span>
+
+</h1>
+
+<p class="text-white text-xl mt-8">
+
+Türkiye'de vize, ikamet, çalışma izni,
+öğrenci işlemleri, noter, tercüme ve
+emlak danışmanlığında profesyonel çözümler.
+
+</p>
+
+<div class="mt-10 flex justify-center gap-4 flex-wrap">
+
+<a href="#contact"
+class="bg-yellow-500 text-black px-8 py-4 rounded-full font-bold">
+
+İletişime Geç
+
+</a>
+
+<a href="https://wa.me/905550777172"
+class="bg-green-500 text-white px-8 py-4 rounded-full font-bold">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services" class="py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-center text-5xl font-bold mb-16">
+
+Hizmetlerimiz
+
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="service-card bg-white p-8 rounded-3xl shadow-xl">
+<h3 class="text-2xl font-bold">📑 Vize İşlemleri</h3>
+<p class="mt-4">Tüm vize başvuruları.</p>
+</div>
+
+<div class="service-card bg-white p-8 rounded-3xl shadow-xl">
+<h3 class="text-2xl font-bold">🏠 İkamet İzni</h3>
+<p class="mt-4">İkamet ve oturma izinleri.</p>
+</div>
+
+<div class="service-card bg-white p-8 rounded-3xl shadow-xl">
+<h3 class="text-2xl font-bold">🎓 Öğrenci Danışmanlığı</h3>
+<p class="mt-4">Üniversite kayıt işlemleri.</p>
+</div>
+
+<div class="service-card bg-white p-8 rounded-3xl shadow-xl">
+<h3 class="text-2xl font-bold">⚖️ Avukatlık</h3>
+<p class="mt-4">Profesyonel hukuk desteği.</p>
+</div>
+
+<div class="service-card bg-white p-8 rounded-3xl shadow-xl">
+<h3 class="text-2xl font-bold">🚚 Kargo</h3>
+<p class="mt-4">Uluslararası gönderiler.</p>
+</div>
+
+<div class="service-card bg-white p-8 rounded-3xl shadow-xl">
+<h3 class="text-2xl font-bold">🏢 Emlak</h3>
+<p class="mt-4">Ev ve işyeri danışmanlığı.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- YOUTUBE -->
+
+<section id="videos" class="bg-black py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-center text-white text-5xl font-bold mb-16">
+
+Videolarımız
+
+</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<iframe
+class="youtube-frame"
+src="https://www.youtube.com/watch?v=SJbdtnEGc9s&t=4s"
+allowfullscreen>
+</iframe>
+
+<iframe
+class="youtube-frame"
+src="https://www.youtube.com/watch?v=7pQwIRMbiLE"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="py-24">
+
+<div class="max-w-4xl mx-auto px-6">
+
+<div class="bg-white rounded-3xl p-10 shadow-2xl">
+
+<h2 class="text-4xl font-bold text-center">
+
+İletişim
+
+</h2>
+
+<form class="mt-8">
+
+<input
+type="text"
+placeholder="Ad Soyad"
+class="w-full border p-4 rounded-xl mb-4">
+
+<input
+type="email"
+placeholder="E-Mail"
+class="w-full border p-4 rounded-xl mb-4">
+
+<textarea
+rows="6"
+placeholder="Mesajınız"
+class="w-full border p-4 rounded-xl mb-4">
+</textarea>
+
+<button
+class="w-full bg-black text-white py-4 rounded-xl">
+
+Gönder
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="bg-black text-center text-white py-8">
+
+© 2026 ADALAT CONSULTING
+
+<br><br>
+
++90 555 077 71 72
+
+</footer>
+
+</body>
+</html>
+
