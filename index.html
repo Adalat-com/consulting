@@ -60,6 +60,21 @@ border:none;
 border-radius:20px;
 }
 
+/* LOGO ARKA SURAT */
+.logo-bg{
+background-image:url('images/logo-bg.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+padding:12px 25px;
+border-radius:15px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.35);
+
+display:inline-block;
+}
+
 </style>
 </head>
 
@@ -71,14 +86,14 @@ border-radius:20px;
 
 <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-<h1 class="text-white text-3xl font-bold">
+<h1 class="text-white text-3xl font-bold logo-bg">
 ADALAT CONSULTING
 </h1>
 
 <div class="hidden md:flex gap-8 text-white">
 
 <a href="#home">Ana Sayfa</a>
-<a href="#services">Hizmetler</a>
+<a href="#services">Fotoğraflar</a>
 <a href="#videos">Videolar</a>
 <a href="#contact">İletişim</a>
 
@@ -88,116 +103,199 @@ ADALAT CONSULTING
 
 </nav>
 
+</body>
+</html>
+
+
+```html
 <!-- HERO -->
 
 <section id="home"
-class="relative h-screen flex items-center justify-center text-center">
+class="relative h-screen flex items-center justify-center text-center overflow-hidden">
 
-<video
-autoplay
-muted
-loop
-playsinline
-class="hero-video">
+    <!-- Arka Fon Surat -->
+    <div
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image:url('images/hero-bg.jpg');">
+    </div>
 
-<source
-src="https://cdn.coverr.co/videos/coverr-business-meeting-1567844819065?download=1080p"
-type="video/mp4">
+    <!-- Gara Overlay -->
+    <div class="absolute inset-0 bg-black/60"></div>
 
-</video>
+    <!-- Mazmun -->
+    <div class="relative z-10 max-w-4xl px-6">
 
-<div class="overlay"></div>
+        <h1 class="text-6xl md:text-8xl font-bold text-white">
 
-<div class="max-w-4xl px-6">
+            ADALAT
+            <span class="text-yellow-400">
+                CONSULTING
+            </span>
 
-<h1 class="text-6xl md:text-8xl font-bold text-white">
+        </h1>
 
-ADALAT
-<span class="text-yellow-400">
-CONSULTING
-</span>
+        <p class="text-white text-xl mt-8">
 
-</h1>
+            Türkiye'de vize, ikamet, çalışma izni,
+            öğrenci işlemleri, noter, tercüme ve
+            emlak danışmanlığında profesyonel çözümler.
 
-<p class="text-white text-xl mt-8">
+        </p>
 
-Türkiye'de vize, ikamet, çalışma izni,
-öğrenci işlemleri, noter, tercüme ve
-emlak danışmanlığında profesyonel çözümler.
+        <div class="mt-10 flex justify-center gap-4 flex-wrap">
 
-</p>
+            <a href="#contact"
+               class="bg-yellow-500 hover:bg-yellow-400 transition text-black px-8 py-4 rounded-full font-bold">
 
-<div class="mt-10 flex justify-center gap-4 flex-wrap">
+                İletişime Geç
 
-<a href="#contact"
-class="bg-yellow-500 text-black px-8 py-4 rounded-full font-bold">
+            </a>
 
-İletişime Geç
+            <a href="https://wa.me/905550777172"
+               class="bg-green-500 hover:bg-green-400 transition text-white px-8 py-4 rounded-full font-bold">
 
-</a>
+                WhatsApp
 
-<a href="https://wa.me/905550777172"
-class="bg-green-500 text-white px-8 py-4 rounded-full font-bold">
+            </a>
 
-WhatsApp
+        </div>
 
-</a>
+    </div>
 
-</div>
+</section>
+```
 
-</div>
+<!-- HIZMETLER -->
+<section id="services" class="py-24 bg-slate-50">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-16 fade-up">
+            <h2 class="text-5xl font-bold text-primary">
+                Fotoğraflar
+            </h2>
+
+            <p class="mt-4 text-slate-600">
+                Sonuçlarımız gösterdi ki
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- Resim 1 -->
+            <div class="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 p-4 fade-up">
+                <div class="h-[450px] flex items-center justify-center overflow-hidden">
+                    <img
+                        src="images/1.png"
+                        alt="1"
+                        onclick="openModal(this)"
+                        class="max-w-full max-h-full object-contain hover:scale-105 transition duration-500 cursor-pointer">
+                </div>
+            </div>
+
+            <!-- Resim 2 -->
+            <div class="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 p-4 fade-up">
+                <div class="h-[450px] flex items-center justify-center overflow-hidden">
+                    <img
+                        src="images/2.png"
+                        alt="2"
+                        onclick="openModal(this)"
+                        class="max-w-full max-h-full object-contain hover:scale-105 transition duration-500 cursor-pointer">
+                </div>
+            </div>
+
+            <!-- Resim 3 -->
+            <div class="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 p-4 fade-up">
+                <div class="h-[450px] flex items-center justify-center overflow-hidden">
+                    <img
+                        src="images/3.png"
+                        alt="3"
+                        onclick="openModal(this)"
+                        class="max-w-full max-h-full object-contain hover:scale-105 transition duration-500 cursor-pointer">
+                </div>
+            </div>
+
+            <!-- Resim 4 -->
+            <div class="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 p-4 fade-up">
+                <div class="h-[450px] flex items-center justify-center overflow-hidden">
+                    <img
+                        src="images/4.png"
+                        alt="4"
+                        onclick="openModal(this)"
+                        class="max-w-full max-h-full object-contain hover:scale-105 transition duration-500 cursor-pointer">
+                </div>
+            </div>
+
+            <!-- Resim 5 -->
+            <div class="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 p-4 fade-up">
+                <div class="h-[450px] flex items-center justify-center overflow-hidden">
+                    <img
+                        src="images/5.png"
+                        alt="5"
+                        onclick="openModal(this)"
+                        class="max-w-full max-h-full object-contain hover:scale-105 transition duration-500 cursor-pointer">
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
 
 </section>
 
-<!-- SERVICES -->
+<!-- IMAGE MODAL -->
+<div id="imageModal"
+     class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50 p-4">
 
-<section id="services" class="py-24">
+    <span
+        onclick="closeModal()"
+        class="absolute top-5 right-8 text-white text-6xl cursor-pointer hover:scale-125 transition">
+        &times;
+    </span>
 
-<div class="max-w-7xl mx-auto px-6">
-
-<h2 class="text-center text-5xl font-bold mb-16">
-
-Hizmetlerimiz
-
-</h2>
-
-<div class="grid md:grid-cols-3 gap-8">
-
-<div class="service-card bg-white p-8 rounded-3xl shadow-xl">
-<h3 class="text-2xl font-bold">📑 Vize İşlemleri</h3>
-<p class="mt-4">Tüm vize başvuruları.</p>
+    <img
+        id="modalImage"
+        src=""
+        alt=""
+        class="max-w-[95%] max-h-[95vh] rounded-2xl shadow-2xl">
 </div>
 
-<div class="service-card bg-white p-8 rounded-3xl shadow-xl">
-<h3 class="text-2xl font-bold">🏠 İkamet İzni</h3>
-<p class="mt-4">İkamet ve oturma izinleri.</p>
-</div>
+<script>
+function openModal(img) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
 
-<div class="service-card bg-white p-8 rounded-3xl shadow-xl">
-<h3 class="text-2xl font-bold">🎓 Öğrenci Danışmanlığı</h3>
-<p class="mt-4">Üniversite kayıt işlemleri.</p>
-</div>
+    modalImg.src = img.src;
 
-<div class="service-card bg-white p-8 rounded-3xl shadow-xl">
-<h3 class="text-2xl font-bold">⚖️ Avukatlık</h3>
-<p class="mt-4">Profesyonel hukuk desteği.</p>
-</div>
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
 
-<div class="service-card bg-white p-8 rounded-3xl shadow-xl">
-<h3 class="text-2xl font-bold">🚚 Kargo</h3>
-<p class="mt-4">Uluslararası gönderiler.</p>
-</div>
+    document.body.style.overflow = 'hidden';
+}
 
-<div class="service-card bg-white p-8 rounded-3xl shadow-xl">
-<h3 class="text-2xl font-bold">🏢 Emlak</h3>
-<p class="mt-4">Ev ve işyeri danışmanlığı.</p>
-</div>
+function closeModal() {
+    const modal = document.getElementById('imageModal');
 
-</div>
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
 
-</div>
+    document.body.style.overflow = 'auto';
+}
 
-</section>
+document.getElementById('imageModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeModal();
+    }
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+});
+</script>
 
 <!-- YOUTUBE -->
 
