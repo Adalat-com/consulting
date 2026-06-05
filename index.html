@@ -233,53 +233,99 @@ Hizmetlerimiz
     </div>
 </section>
 
-<!-- CONTACT -->
-
+<!-- Contact -->
 <section id="contact" class="py-24">
 
 <div class="max-w-4xl mx-auto px-6">
 
-<div class="bg-white rounded-3xl p-10 shadow-2xl">
-
-<h2 class="text-4xl font-bold text-center">
-
-İletişim
-
+<div class="text-center fade-up">
+<h2 class="text-5xl font-bold text-primary">
+İletişime Geçin
 </h2>
 
-<form class="mt-8">
+<p class="mt-4 text-slate-600">
+Projeniz hakkında konuşalım.
+</p>
+</div>
 
-<input
-type="text"
-placeholder="Ad Soyad"
-class="w-full border p-4 rounded-xl mb-4">
 
-<input
-type="email"
-placeholder="E-Mail"
-class="w-full border p-4 rounded-xl mb-4">
 
-<textarea
-rows="6"
-placeholder="Mesajınız"
-class="w-full border p-4 rounded-xl mb-4">
-</textarea>
+<form
+action="https://formspree.io/f/xnjyqkep"
+method="POST"
+class="bg-white rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-8 md:p-12">
 
-<button
-class="w-full bg-black text-white py-4 rounded-xl">
+<div class="mb-8 text-center">
+    <h3 class="text-3xl font-bold text-slate-800">
+        Bizimle İletişime Geçin
+    </h3>
 
-Gönder
+    <p class="text-slate-500 mt-2">
+        Sorularınızı ve taleplerinizi bize iletebilirsiniz.
+    </p>
+</div>
 
-</button>
+<div class="grid md:grid-cols-2 gap-6">
+
+    <div>
+        <label class="block mb-2 text-sm font-medium text-slate-600">
+            Ad Soyad
+        </label>
+
+        <input
+        type="text"
+        name="name"
+        required
+        placeholder="Adınızı giriniz"
+        class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+    </div>
+
+    <div>
+        <label class="block mb-2 text-sm font-medium text-slate-600">
+            E-Posta
+        </label>
+
+        <input
+        type="email"
+        name="email"
+        required
+        placeholder="Vepashka@email.com"
+        class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+    </div>
+
+</div>
+
+<div class="mt-6">
+    <label class="block mb-2 text-sm font-medium text-slate-600">
+        Mesajınız
+    </label>
+
+    <textarea
+    name="message"
+    rows="6"
+    required
+    placeholder="Mesajınızı buraya yazın..."
+    class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition resize-none"></textarea>
+</div>
+
+<div class="mt-8">
+    <button
+    type="submit"
+    class="w-full bg-gradient-to-r from-slate-900 to-slate-700 hover:from-amber-500 hover:to-amber-600 text-white py-4 rounded-xl font-semibold text-lg transition duration-300 shadow-lg hover:shadow-2xl">
+        Mesaj Gönder →
+    </button>
+</div>
+
+<div class="mt-6 text-center text-sm text-slate-500">
+    Mesajınız doğrudan uzman ekibimize ulaşacaktır.
+</div>
 
 </form>
 
-</div>
 
 </div>
 
 </section>
-
 <footer class="bg-black text-center text-white py-8">
 
 © 2026 ADALAT CONSULTING
